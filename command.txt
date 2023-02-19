@@ -1,0 +1,10 @@
+
+1) truffle migrate ------> deploy contract
+
+2) truffle migrate --reset -------> reset contract state
+
+3) truffle console -----> access command line console of smart contract (SC)
+
+4) const instance = await Faucet.deployed(); ---> access instance of SC
+
+5) instance.addFunds({value: "2000000", from: accounts[0]});
