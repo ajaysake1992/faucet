@@ -31,3 +31,56 @@ public vs external - almost same from outside but external function can not call
 Generally it's good practise to mark function extrenal if only call from outside but we can still call it using this keyword but with high gas 
 
 
+Section 9) Memory
+
+Notes -
+
+assembly {} - we can write low level language code
+
+Access modifiers -
+
+1) public - outside of contract
+2) private - within smart contract
+3) internal - within smart contract and can be derived
+
+
+Section 10) Storage
+
+In solididty varibles are stored in array slot of size 32. So because of this orders of defining variables matter a lot in smart contract to use slot efficiently in order to lower down gas fee for deployment of SC and perform a transaction.
+
+uint8 public  a = 7 ===> 8 bits = 1 byte memory
+uint16 public  b = 15 ===> 8 bits = 1 byte memory,So 2 byte
+address public  c = Ox222dgdg20303030303 ===> 20 bytes
+bool d = true ===> 1 byte
+uint64 public  c = 15 ===> 64/8 === 8 byte
+Total = 32 bytes ===> stored in 0 slot
+[[0], [1]....]
+
+
+to check storage, need to access insatnce of contract or use getStorgeAt("contrac address", slot_nu) metid of
+web3 libaray
+
+Section 11) Mappings
+
+Mapping == Map or hashmap of traditional programming languages
+
+Store value in key value pair, store unique value
+
+Note = we can consider it for replacement of array, beacuse it will not checck for uniqueness
+
+Syntax===> mapping(unint => address) private funders
+
+
+Section 12) Solidity
+
+Withdraw fund -
+
+payable(msg.sender).transfer(amount, account);
+
+
+
+
+
+
+
+
