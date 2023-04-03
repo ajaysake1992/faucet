@@ -77,6 +77,58 @@ Withdraw fund -
 
 payable(msg.sender).transfer(amount, account);
 
+For validation - use require(condition, msg); function
+
+Modifiers - we can reuse function or reduce repitations.
+modifier function() {}---> modifier is keyword
+
+Owner of contract - 
+
+Note - contract address and contract creation address are diff
+
+address public owner;
+
+constructor() {
+    owner = msg.sender;
+}
+
+
+Inheritance in Solidity - 
+
+Create parent contract for resuable code.
+
+then use "is" keyword for extend that into child
+
+Example - 
+
+contract Child is Parent {}
+
+Abstract Contract - 
+
+keyword - abstarct
+
+abstract contract test {
+    //verual method
+    // can also have method with implementation
+}
+
+Interface in Contract -
+
+keyword - interface
+syntax - 
+interface IFaucet
+can not inherit frm other smart contract
+they can only inherit from other interafce
+they can not declare a constructor
+they can not declare state variable
+function has to external
+
+Function Accessors -
+
+
+
+
+
 
 
 

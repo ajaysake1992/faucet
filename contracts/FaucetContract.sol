@@ -14,4 +14,10 @@ contract Faucet {
     function getAllFunders() external view returns(address[] memory) {
         return funders;
     }
+
+    // New Function -> getContractBalance
+    function getContractBalance() public view returns(uint){
+        return payable(address(this)).balance;
+    }
+
 }
