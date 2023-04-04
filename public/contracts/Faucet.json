@@ -12,7 +12,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -25,7 +26,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -38,7 +40,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -51,11 +54,13 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "stateMutability": "payable",
-      "type": "receive"
+      "type": "receive",
+      "payable": true
     },
     {
       "inputs": [],
@@ -68,14 +73,16 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "addFunds",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -115,7 +122,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -134,7 +142,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"addFunds\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"emitLog\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllFunders\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"index\",\"type\":\"uint8\"}],\"name\":\"getFunderAtIndex\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numOfFunders\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"test1\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"test2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"test5\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"testNum\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"withdrawAmount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"Faucet\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0x9b048551cb1a2221a6152a0ad19ce214642f26ee5be44d347438883114e90973\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://74f09b240305f8bf076642e7a5dd164a8fb9a7943849b49ffe4e5054d4ea5132\",\"dweb:/ipfs/QmXPNr36ckXsXHEChNw9JgmexaeZryKKuiWstZGCdN4sjX\"]},\"project:/contracts/IFaucet.sol\":{\"keccak256\":\"0x680c12e4a5dfdf5ab14478e74d9fa8ef480dc2e54aec89732159fbfccad5f52e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4ab24c71ae2daeef436aea445eb55627048215d366e45f2c684c2c7f816dfd53\",\"dweb:/ipfs/QmenL8cPcvSU47TgiSSRNeYG3F64Lxh9A7ogwqUwSswgr1\"]},\"project:/contracts/Logger.sol\":{\"keccak256\":\"0xfea7b05c81d0e29a98c32f4b0e890c89d7536239a6eff355f0d2d2272385b0cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b21c2fcb24b14ac35b1a12822bd39636d5c77e2e812292ab5b5a5fee84c46c9a\",\"dweb:/ipfs/QmXu6ToRDGUF37UaDjEYyEt8mzbsPugCcUx64NxTqNf8ce\"]},\"project:/contracts/Owned.sol\":{\"keccak256\":\"0x1c12597cd3a4629b5e1e8f8820988701bde960960fa358b8409c9e656cd30ae5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4e9d5cff4c3ce671dc86f0fab9f94d51140e4cc32d0ccc40c49923f8cb5b8c97\",\"dweb:/ipfs/QmVasBEyUc8mE6jv6B3LV4n4mmRkDdGYAvdFmG1PcM3RJr\"]}},\"version\":1}",
@@ -5485,9 +5494,17 @@
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xdd78B8aBAb89d6A58E7F94692C4E822e13463450",
+      "transactionHash": "0xc8372197c6d9c2dadc6b5628cd088251bf025ee48a8c31a7a73874c76387312e"
+    }
+  },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-04-03T17:13:50.517Z",
+  "updatedAt": "2023-04-04T14:25:00.635Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
